@@ -1,16 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
 nav{
     position: absolute;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100%;
+    
+}
+
+
+
 nav .container-fluid li{
  margin-right: 50px;
+ flex: 1;
 }
 
 nav .container-fluid li a{
     color: black;
+    flex: 1;
 }
 nav .container-fluid li a:-moz-placeholder{
     color: #DEDBD2;
+    flex: 1;
 }
 
 /*Carousel*/
@@ -62,13 +83,13 @@ nav .container-fluid li a:-moz-placeholder{
 
 #container-fluid-2{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: auto;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     background: #f7e1d7ff;
-    overflow-x: auto;
+    
 }
 
 details, summary{
@@ -148,6 +169,7 @@ details[open], details[open] {
 
 }
 
+<<<<<<< HEAD
 /*DOWNLOAD*/
 
 #container-fluid-4 {
@@ -166,4 +188,88 @@ details[open], details[open] {
     padding: 10px;
     margin-top: 40px;
     margin-left: 10vw;
+=======
+@media (max-width: 768px) {
+    nav {
+        position: relative; /* Ajusta o posicionamento do menu */
+    }
+
+    .container {
+        flex-direction: column; /* Mantém a estrutura em coluna */
+        height: auto; /* Permite altura dinâmica */
+        width: 100%; /* Ajusta a largura */
+    }
+
+    nav .container-fluid li {
+        margin-right: 10px; /* Reduz o espaçamento entre itens */
+        flex: none; /* Remove o comportamento flexível */
+    }
+
+    nav .container-fluid li a {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    #carouselExampleIndicators img {
+        height: 300px; /* Reduz a altura das imagens do carrossel */
+        width: 100%; /* Garante que as imagens ocupem toda a largura */
+        object-fit: cover; /* Ajusta a imagem para caber no espaço */
+    }
+
+    #container-fluid-1 {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        height: auto; /* Permite altura dinâmica */
+        padding: 20px; /* Adiciona espaçamento interno */
+    }
+
+    .texto1 {
+        width: 90%; /* Reduz a largura do texto */
+        margin-left: 0; /* Remove o deslocamento lateral */
+        margin-top: 20px; /* Ajusta o espaçamento superior */
+    }
+
+    .imagem1 {
+        margin-left: 0; /* Remove o deslocamento lateral */
+        margin-top: 20px; /* Adiciona espaçamento superior */
+    }
+
+    .imagem1 img {
+        height: auto; /* Ajusta a altura dinamicamente */
+        width: 100%; /* Garante que a imagem ocupe toda a largura */
+    }
+
+    #container-fluid-2 {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        height: auto; /* Permite altura dinâmica */
+        padding: 20px; /* Adiciona espaçamento interno */
+    }
+
+    details {
+        width: 90%; /* Reduz a largura dos detalhes */
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+
+    .texto2 {
+        width: 90%; /* Reduz a largura do texto */
+        margin-left: 0; /* Remove o deslocamento lateral */
+    }
+
+    .imagem2 {
+        margin-left: 0; /* Remove o deslocamento lateral */
+        position: relative; /* Ajusta o posicionamento */
+        margin-top: 20px; /* Adiciona espaçamento superior */
+    }
+
+    .imagem2 img {
+        height: auto; /* Ajusta a altura dinamicamente */
+        width: 100%; /* Garante que a imagem ocupe toda a largura */
+    }
+
+    #container-fluid-3 {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        height: auto; /* Permite altura dinâmica */
+        padding: 20px; /* Adiciona espaçamento interno */
+    }
+
+    
+>>>>>>> e7f76694db05ea4fb9daa4b423992d0b28481c9d
 }
