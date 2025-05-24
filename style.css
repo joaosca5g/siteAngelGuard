@@ -146,13 +146,27 @@ details[open], details[open] {
 /*Desenvolvedores*/
 
 #container-fluid-3{
-     display: flex;
+    display: flex;
     height: 100vh;
     width: auto;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-   background: #fff;
+    background: #f7e1d7ff;
+
+}
+
+.card{
+    margin-top: 10px;
+    margin-left: 1%;
+}
+
+#imagens1{
+    display: flex;
+}
+
+#container-fluid-3 h3 {
+
 }
 
 @media (max-width: 768px) {
