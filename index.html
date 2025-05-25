@@ -43,7 +43,7 @@
   <!--CONTEÚDO DA PÁGINA-->
 
   <!--Carousel-->
-  <div id="carouselExampleIndicators" class="carousel slide">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -54,13 +54,18 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./img/AngelGuard.png" class="d-block w-100" alt="..."><!--Imagem 1-->
+        <img src="./img/img-desktop/banner2.png" class="img-fluid d-none d-xl-block" alt="..."><!--Imagem 1-->
+        <img src="./img/img-cell/banner3.png" class="img-fluid d-block d-md-none d-xl-none" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          </div>
       </div>
       <div class="carousel-item">
-        <img src="./img/AngelGuard.png" class="d-block w-100" alt="..."><!--Imagem 2-->
+        <img src="./img/img-desktop/bannerPurple.svg" class="img-fluid d-none d-xl-block" alt="...">
+        <img src="./img/img-cell/bannerPurple-cell.svg" class="img-fluid d-block d-md-none d-xl-none" alt="..."><!--Imagem 2-->
       </div>
       <div class="carousel-item">
-        <img src="./img/AngelGuard.png" class="d-block w-100" alt="..."><!--Imagem 3-->
+        <img src="./img/img-desktop/banner2.png" class="img-fluid d-none d-xl-block" alt="...">
+        <img src="./img/img-cell/banner3.png" class="img-fluid d-block d-md-none d-xl-none" alt="..."><!--Imagem 3-->
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -102,7 +107,7 @@
   <!--PREVIEW-->
   <div id="container-fluid-2">
     <div class="texto2">
-      <h2>DEMONSTRAÇÃO DO APLICATIVO (<i><u>PREVIEW</u></i>)</h2>
+      <h2 style="color: #fff;">DEMONSTRAÇÃO DO APLICATIVO (<i><u>PREVIEW</u></i>)</h2>
       <hr>
 
 
@@ -164,16 +169,80 @@
       </details>
 
     </div>
-    <div class="imagem2">
-      <img src="./img/cell1.png">
-    </div>
   </div>
 
 <!--DESENVOLVEDORES-->
-  <div id="container-fluid-3"></div>
+
+<article id="gallery">
+
+    <header>
+        <h2 style="color: #fff;">Desenvolvedores</h2>
+    </header>
+    <section class="img-group-container">
+        <div>
+            <ul class="img-group">
+                <li class="img-container">
+                   <div class="card" style="width: 19rem;">
+  <img src="./img/matheus.jpg" class="card-img-top" alt="..." style="height: 18rem;">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+                </li>
+                <li class="img-container">
+                    <div class="card" style="width: 19rem;">
+                    <img src="./img/Waldemar.jpg" class="card-img-top" alt="..." style="height: 18rem;">
+                    <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    </div>
+                    </div>
+                </li>
+                <li class="img-container">
+                   <div class="card" style="width: 19rem;">
+  <img src="./img/joao1.jpg" class="card-img-top" alt="..." style="height: 18rem;"> 
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</article>
+<div class="progress"></div>
+
+
+  <div id="container-fluid-3">
+    <!--Titulo-->
+    <div id="tituloDev"><h2 style="color: #fff;"><strong>Desenvolvedores</strong></h2></div>
+    <!--CARDS-->
+    <div id="desenvolvedores123">
+      <!--Matheus-->
+    <div class="card" style="width: 18rem;">
+  <img src="./img/matheus.jpg" class="card-img-top" alt="..." style="height: 18rem;">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+<!--Waldemar-->
+<div class="card" style="width: 18rem;">
+  <img src="./img/Waldemar.jpg" class="card-img-top" alt="..." style="height: 18rem;">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+  
+  <!--João-->
+  <div class="card" style="width: 18rem;">
+  <img src="./img/joao1.jpg" class="card-img-top" alt="..." style="height: 18rem;"> 
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+</div>
     
+</div>
 <!--DOWNLOAD-->
-<<<<<<< HEAD
   <div id="container-fluid-4">
     <div id="texto3">
       <h3>Seu Novo Aliado está a Um Clique de Distância! 🚀<hr></h3>
@@ -181,11 +250,31 @@
       <p>Queremos reforçar que este download é totalmente seguro e confiável. Nosso aplicativo foi desenvolvido com os mais altos padrões de segurança e privacidade, garantindo que a instalação no seu celular seja feita sem riscos.<br> Você está baixando um arquivo limpo, diretamente da nossa fonte oficial.</p>
       <button type="button" class="btn btn-primary">Download</button>
     </div>
-=======
-  <div id="container-fluid-4"></div>
-
->>>>>>> e7f76694db05ea4fb9daa4b423992d0b28481c9d
   </div>
+  </div>
+  <footer>
+    <div class="container-fluid5">
+      <p>Desenvolvedores: Matheus, João e Waldemar</p>
+      <p>AngelGuard - Todos os direitos reservados © 2023</p>
+    </div>
 </body>
+<script type="module">
+    import { animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@12.12.0/+esm"
+
+    const items = document.querySelectorAll(".img-container")
+
+    // Animate gallery horizontally during vertical scroll
+    scroll(
+        animate(".img-group", {
+            transform: ["none", `translateX(-${items.length - 1}00vw)`],
+        }),
+        { target: document.querySelector(".img-group-container") }
+    )
+
+    // Progress bar representing gallery scroll
+    /*scroll(animate(".progress", { scaleX: [0, 1] }), {
+        target: document.querySelector(".img-group-container"),
+    })*/
+</script>
 
 </html>

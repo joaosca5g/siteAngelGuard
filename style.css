@@ -13,12 +13,10 @@ nav{
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 100%;
-    
+    padding: 0 !important;
 }
-
-
 
 nav .container-fluid li{
  margin-right: 50px;
@@ -35,12 +33,21 @@ nav .container-fluid li a:-moz-placeholder{
 }
 
 /*Carousel*/
-#carouselExampleIndicators{
+#carouselExampleIndicators {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
 
+#carouselExampleIndicators img {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
-#carouselExampleIndicators img{
-    height: 650px;
-}
+
+
 
 /*SOBRE NÓS*/
 #container-fluid-1{
@@ -50,7 +57,9 @@ nav .container-fluid li a:-moz-placeholder{
     flex-direction: row;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-   background: #f7e1d7ff;
+    border: none;
+   background: #833AB4;
+background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
 }
 .texto1{
@@ -58,10 +67,14 @@ nav .container-fluid li a:-moz-placeholder{
     padding: 10px;
     margin-top: 40px;
     margin-left: 10vw;
-    background-color: #DEDBD2;
+    background-color:  #833AB4;
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
     border-radius: 20px;
     border: none;
-    color: #000;
+    color: #fff;
 }
 
 .texto1 p {
@@ -83,12 +96,14 @@ nav .container-fluid li a:-moz-placeholder{
 
 #container-fluid-2{
     display: flex;
-    height: 100%;
+    height: 100vh;
     width: auto;
     flex-direction: column;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    background: #f7e1d7ff;
+    border: none;
+    background: #833AB4;
+background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     
 }
 
@@ -129,21 +144,88 @@ details[open], details[open] {
     margin-left: 10vw;
 }
 
-
-.imamgem2 {
-    margin-left: 5vw;
-    position: absolute;
-}
-
-.imagem2 img{
-    height: 50vh;
-    border: none;
-    border-radius: 10px;
-    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
-    position:fixed;
-}
-
 /*Desenvolvedores*/
+#gallery {
+        background: #833AB4;
+background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+
+    #gallery h3 {
+        font-family: "" Azeret Mono "", monospace;
+        color: #fff;
+    }
+
+    #gallery header,
+    #gallery footer {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-group-container {
+        height: 500vh;
+        position: relative;
+    }
+
+    .img-group-container > div {
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .img-group {
+        display: flex;
+    }
+
+    .img-container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #gallery header h2 {
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+    }
+
+    .img-container h3 {
+        margin: 0;
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        line-height: 1.2;
+        position: relative;
+        bottom: 30px;
+        display: inline-block;
+    }
+
+    .img-container img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .progress {
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: #9911ff;
+        bottom: 50px;
+        transform: scaleX(0);
+    }
+
+
+
 
 #container-fluid-3{
     display: flex;
@@ -152,43 +234,70 @@ details[open], details[open] {
     flex-direction: column;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    background: #f7e1d7ff;
+    background: #833AB4;
+background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
+}
+
+#desenvolvedores123{
+    display: flex;
+    flex-direction: row;
+}
+
+#tituloDev{
+    display: block;
 }
 
 .card{
     margin-top: 10px;
-    margin-left: 1%;
+    margin-left: 3%;
+    border-radius: 10px;
+    border: none;
+   box-shadow: rgba(255, 3, 162, 0.87) -5px 5px, rgba(218, 33, 150, 0.815) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 #imagens1{
     display: flex;
+    border-radius: 10px;
+    border: none;
 }
 
-#container-fluid-3 h3 {
 
-}
-
-<<<<<<< HEAD
 /*DOWNLOAD*/
 
 #container-fluid-4 {
-      display: flex;
+    display: flex;
     height: 100vh;
-    width: auto;
+    width: 100%;
     flex-direction: column;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    background: #f7e1d7ff;
+    color: #fff;
+    background: #833AB4;
+background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
 }
 
-.texto3{
+#texto3{
     width: 50vw;
     padding: 10px;
     margin-top: 40px;
-    margin-left: 10vw;
-=======
+    background-color: #B0C4B1;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+
+
+
+
+
 @media (max-width: 768px) {
     nav {
         position: relative; /* Ajusta o posicionamento do menu */
@@ -198,6 +307,8 @@ details[open], details[open] {
         flex-direction: column; /* Mantém a estrutura em coluna */
         height: auto; /* Permite altura dinâmica */
         width: 100%; /* Ajusta a largura */
+        
+       
     }
 
     nav .container-fluid li {
@@ -211,9 +322,16 @@ details[open], details[open] {
 
     #carouselExampleIndicators img {
         height: 300px; /* Reduz a altura das imagens do carrossel */
-        width: 100%; /* Garante que as imagens ocupem toda a largura */
+        width: 100vw; /* Garante que as imagens ocupem toda a largura */
         object-fit: cover; /* Ajusta a imagem para caber no espaço */
     }
+
+    .carouselInner .carousel-item img {
+        
+        
+    }
+
+
 
     #container-fluid-1 {
         flex-direction: column; /* Alinha os elementos em coluna */
@@ -230,11 +348,13 @@ details[open], details[open] {
     .imagem1 {
         margin-left: 0; /* Remove o deslocamento lateral */
         margin-top: 20px; /* Adiciona espaçamento superior */
+        border: none;
     }
 
     .imagem1 img {
         height: auto; /* Ajusta a altura dinamicamente */
         width: 100%; /* Garante que a imagem ocupe toda a largura */
+        border: none;
     }
 
     #container-fluid-2 {
@@ -270,6 +390,31 @@ details[open], details[open] {
         padding: 20px; /* Adiciona espaçamento interno */
     }
 
-    
->>>>>>> e7f76694db05ea4fb9daa4b423992d0b28481c9d
+    .card{
+    margin-top: 10px;
+    margin-left: 3%;
+    border-radius: 10px;
+    border: none;
+   box-shadow: rgba(255, 3, 162, 0.87) -5px 5px, rgba(218, 33, 150, 0.815) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+ #gallery header h2 {
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+    }
+
+
+
+    #desenvolvedores123{
+    display: flex;
+    flex-direction: column;
+}
+
+#tituloDev{
+    display: block;
+}
 }
