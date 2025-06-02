@@ -521,11 +521,10 @@ footer{
     border: 0px solid #fff;
     color: #fff;
 }
-footer .container-fluid5{
+/* footer .container-fluid5{} */
      
     /* align-items: center; */
    
-}
 footer .logo-footer{
     align-items: center;
     font-size: 22px;
