@@ -684,6 +684,19 @@ footer .container-fluid5 .copyright-footer p{
    box-shadow: rgba(43, 2, 79, 0.87) -5px 5px, rgba(84, 3, 113, 0.815) -10px 10px, rgba(175, 46, 240, 0.2) -15px 15px, rgba(175, 46, 240, 0.2) -20px 20px, rgba(175, 46, 240, 0.2) -25px 25px;
     }
 
+    .socialmedias a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.socialmedias a:hover{
+    color: blue;
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+
     #gallery header h2 {
         font-size: 70px;
         font-weight: 700;
@@ -831,6 +844,19 @@ footer .container-fluid5 .copyright-footer p{
         height: auto; /* Ajusta a altura dinamicamente */
         width: 100%; /* Garante que a imagem ocupe toda a largura */
     }
+
+
+    .socialmedias a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.socialmedias a:hover{
+    color: blue;
+    scale: 1.05;
+    transition: 0.5s;
+}
 
 
     .card{
